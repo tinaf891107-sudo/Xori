@@ -296,8 +296,8 @@ function findBestMatch(input) {
 
 // ── Wisteria petals ───────────────────────────────────────
 const PETAL_COLORS = [
-  "#c4a0e8","#b57bee","#d0aaf5","#e9d5ff",
-  "#a78bfa","#c084fc","#ddd6fe","#cab4f0"
+  "#ffffff","#f5e6ff","#e9d5ff","#d8b4fe",
+  "#c084fc","#a855f7","#e879f9","#f0abfc"
 ];
 
 let petalInterval = null;
@@ -315,7 +315,7 @@ function createPetal() {
 
   petal.style.cssText = `
     left:${left}%;width:${size}px;height:${size*1.75}px;
-    background:${color};opacity:${0.55+Math.random()*0.35};
+    background:${color};opacity:${0.75+Math.random()*0.25};
     animation-name:petal-fall;animation-duration:${duration}s;
     animation-delay:${delay}s;animation-timing-function:linear;
     animation-fill-mode:forwards;
