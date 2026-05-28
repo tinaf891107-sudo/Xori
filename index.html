@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XORI — 它的名字</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <span class="brand">XORI</span>
+    </header>
+
+    <!-- 輸入區 -->
+    <section id="input-section">
+      <h1 class="title">它的名字</h1>
+      <p class="subtitle">描述一種感受，我們將遍尋世界上所有的語言——<br>為它定一個詞。</p>
+
+      <div class="input-wrap">
+        <textarea id="feeling-input" maxlength="400"
+          placeholder="久別重逢故鄉時，心底那一份安靜的首覺……"></textarea>
+        <div class="char-counter">還可輸入 <span id="remaining">400</span> 字</div>
+      </div>
+
+      <button id="search-btn">尋找這個詞</button>
+      <p class="hint">每一種感受，終將在某個語言裡找到歸宿</p>
+    </section>
+
+    <!-- 讀取中 -->
+    <section id="loading-section" class="hidden">
+      <p class="loading-text">正在遍尋世界所有的語言……</p>
+    </section>
+
+    <!-- 結果 -->
+    <section id="result-section" class="hidden">
+      <div class="divider-h"></div>
+      <p class="already-named">這種感受，已有人為它命名</p>
+
+      <div class="word-block">
+        <h2 id="result-word" class="word"></h2>
+        <p id="result-origin" class="origin"></p>
+      </div>
+
+      <blockquote id="result-quote" class="quote"></blockquote>
+
+      <div class="divider-v"></div>
+
+      <p class="story">
+        曾經有人，在某個地方，感受過與你相同的一切——<br>
+        他們愛這種感受，愛到要為它起一個名字。
+      </p>
+
+      <p id="result-summary" class="summary"></p>
+
+      <button id="again-btn">描述另一種感受</button>
+      <p class="footer-hint">每一種感受，終將在某個語言裡找到歸宿</p>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
