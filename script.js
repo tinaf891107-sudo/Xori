@@ -441,18 +441,26 @@ function search(input) {
 
 function showResult(result) {
   document.getElementById("result-origin").textContent  = result.origin;
-  document.getElementById("result-quote").textContent   = result.quote;
+  document.getElementById("result-quote").innerHTML     = "";
   document.getElementById("result-summary").textContent = `出來了一個${result.lang}詞`;
 
   currentResult = result;
   resultSection.classList.remove("hidden");
 
+  const WORD_SPEED  = 110;
+  const QUOTE_SPEED = 40;
+  const QUOTE_DELAY = 1200;
+
   setTimeout(() => {
-    typewrite(document.getElementById("result-word"), result.word, 110);
+    typewrite(document.getElementById("result-word"), result.word, WORD_SPEED);
     applyColor(result.color);
   }, 400);
 
-  setTimeout(stopPetals, 3000);
+  setTimeout(() => {
+    typewrite(document.getElementById("result-quote"), result.quote, QUOTE_SPEED);
+  }, QUOTE_DELAY);
+
+  setTimeout(stopPetals, QUOTE_DELAY + result.quote.length * QUOTE_SPEED + 800);
 }
 
 function reset() {
