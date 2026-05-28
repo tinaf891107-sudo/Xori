@@ -5,10 +5,10 @@
 }
 
 :root {
-  --bg:     #f0ebe4;
-  --text:   #2a2620;
-  --muted:  #9a9089;
-  --border: #d6d0c8;
+  --bg:     #66BAB7;
+  --text:   #f5f0eb;
+  --muted:  rgba(245, 240, 235, 0.62);
+  --border: rgba(245, 240, 235, 0.32);
 }
 
 body {
@@ -72,6 +72,7 @@ textarea {
   min-height: 90px;
   outline: none;
   line-height: 1.9;
+  font-size: 16px; /* prevent iOS auto-zoom */
   transition: border-color 0.2s;
 }
 
@@ -80,7 +81,7 @@ textarea:focus {
 }
 
 textarea::placeholder {
-  color: var(--border);
+  color: var(--muted);
 }
 
 .char-counter {
@@ -213,8 +214,17 @@ button:hover {
   margin-bottom: 36px;
 }
 
-#again-btn {
+.btn-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
   margin-bottom: 18px;
+}
+
+#share-btn.copied {
+  opacity: 0.6;
+  cursor: default;
 }
 
 .footer-hint {

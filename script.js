@@ -401,6 +401,24 @@ textarea.addEventListener("keydown", (e) => {
 
 document.getElementById("search-btn").addEventListener("click", triggerSearch);
 document.getElementById("again-btn").addEventListener("click", reset);
+document.getElementById("share-btn").addEventListener("click", shareResult);
+
+// ── Share / copy ──────────────────────────────────────────
+let currentResult = null;
+
+function shareResult() {
+  if (!currentResult) return;
+  const btn = document.getElementById("share-btn");
+  const text = `${currentResult.word}　—　${currentResult.origin}\n\n${currentResult.quote}\n\nhttps://xori-seven.vercel.app/`;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = "已複製！";
+    btn.classList.add("copied");
+    setTimeout(() => {
+      btn.textContent = "複製這個詞";
+      btn.classList.remove("copied");
+    }, 2000);
+  });
+}
 
 // ── Core flow ─────────────────────────────────────────────
 function triggerSearch() {
@@ -426,6 +444,7 @@ function showResult(result) {
   document.getElementById("result-quote").textContent   = result.quote;
   document.getElementById("result-summary").textContent = `出來了一個${result.lang}詞`;
 
+  currentResult = result;
   resultSection.classList.remove("hidden");
 
   setTimeout(() => {
@@ -437,8 +456,12 @@ function showResult(result) {
 }
 
 function reset() {
+  currentResult = null;
   resultSection.classList.add("hidden");
   clearColor();
+  const shareBtn = document.getElementById("share-btn");
+  shareBtn.textContent = "複製這個詞";
+  shareBtn.classList.remove("copied");
   textarea.value = "";
   remaining.textContent = "400";
   inputSection.classList.remove("hidden");
