@@ -1,4 +1,5 @@
 const WORDS = [
+  // ── 原有 20 個 ──────────────────────────────────────────
   {
     word: "木漏れ日",
     lang: "日語",
@@ -32,7 +33,7 @@ const WORDS = [
     lang: "日語",
     origin: "來自日語",
     quote: "「知道美麗短暫，反而看得更清晰——那種因事物終將消逝而生出的溫柔憂傷。」",
-    keys: ["短暫","消逝","凋謝","落葉","花落","時間","流逝","無常","結束","轉瞬","不久","結束了","散了","謝了","煙火","落花","飄零"]
+    keys: ["短暫","消逝","凋謝","落葉","花落","時間","流逝","無常","結束","轉瞬","不久","散了","謝了","煙火","落花","飄零"]
   },
   {
     word: "Fernweh",
@@ -46,7 +47,7 @@ const WORDS = [
     lang: "德語",
     origin: "來自德語",
     quote: "「對某種更深層存在的渴望——那個東西沒有名字，但你一直覺得自己在等它。」",
-    keys: ["渴望","嚮往","說不清","缺少","不完整","想要","說不出","隱隱","好像少了","無法言說","心裡有個洞","什麼都有但"]
+    keys: ["渴望","說不清","缺少","不完整","想要","說不出","隱隱","好像少了","無法言說","心裡有個洞","什麼都有但"]
   },
   {
     word: "Mamihlapinatapai",
@@ -138,6 +139,78 @@ const WORDS = [
     origin: "來自班圖語",
     quote: "「『我的存在，因你而完整』——不是依賴，而是一種深刻的認知：我們是彼此的一部分。」",
     keys: ["人與人","連結","因為有你","共同體","彼此","我因你","陪伴","在一起","有你才有我","互相","群體","我們","不是一個人","有人陪"]
+  },
+
+  // ── 新增 10 個 ──────────────────────────────────────────
+  {
+    word: "Retrouvailles",
+    lang: "法語",
+    origin: "來自法語",
+    quote: "「久別重逢的那一刻——時間好像折疊起來，所有的距離突然變得不重要了。」",
+    keys: ["久別重逢","重逢","再次見面","久違","好久不見","終於見到","又見面了","終於回來","等了好久","見到你了"]
+  },
+  {
+    word: "Toska",
+    lang: "俄語",
+    origin: "來自俄語",
+    quote: "「一種沒有對象的渴望——你不知道自己在等什麼，只是隱隱覺得有什麼應該在這裡，卻不在。」",
+    keys: ["空虛","茫然","說不上來","悶","無所事事","心裡不踏實","焦躁","莫名","不知道為什麼","說不清楚難過","就是不對勁"]
+  },
+  {
+    word: "恋の予感",
+    lang: "日語",
+    origin: "來自日語",
+    quote: "「第一次見面，卻已預感自己會愛上這個人——那個直覺，比理智更早抵達。」",
+    keys: ["直覺","第一次見面","一見","就知道","會喜歡","命中注定","一眼","見到就","第一眼","預感","冥冥之中","感覺以後"]
+  },
+  {
+    word: "積ん読",
+    lang: "日語",
+    origin: "來自日語",
+    quote: "「買下一本書，是一個承諾——不一定要讀，但要讓它知道，你相信有一天你們會相遇。」",
+    keys: ["書","買了沒看","堆著","收藏","捨不得看","囤積","又買書","書太多","想看但","還沒看的書","積了好多"]
+  },
+  {
+    word: "Chrysalism",
+    lang: "英語",
+    origin: "來自英語（現代造詞）",
+    quote: "「外面的雷聲讓室內更安靜——那種被壞天氣包裹著的踏實感，像是世界把你暫時藏起來了。」",
+    keys: ["下雨","打雷","在室內","窗外在下雨","雷聲","躲在裡面","雨聲","大雨","暴雨","雷雨","聽著雨聲","外面在下雨但我在裡面"]
+  },
+  {
+    word: "Vellichor",
+    lang: "英語",
+    origin: "來自英語（現代造詞）",
+    quote: "「翻開一本舊書，看見陌生人的字跡——那個人在哪裡？他們現在還記得這本書嗎？」",
+    keys: ["舊書","二手書","書店","別人的書","翻到別人的字跡","舊書店","泛黃","舊紙","書裡的字","有人寫過","別人留下的"]
+  },
+  {
+    word: "Jouska",
+    lang: "英語",
+    origin: "來自英語（現代造詞）",
+    quote: "「那場在腦海裡反覆排練的對話——你一遍遍修改台詞，但真實的那場，永遠不會完全一樣。」",
+    keys: ["腦海中","想像中的對話","反覆想","如果當時說","如果他說","一直在想","想過很多次","應該說什麼","排練","要說的話","想好了怎麼說"]
+  },
+  {
+    word: "Liberosis",
+    lang: "英語",
+    origin: "來自英語（現代造詞）",
+    quote: "「多麼希望自己可以少在意一點——讓事情就只是事情，而不是一個需要反覆咀嚼的謎。」",
+    keys: ["不想在意","不想那麼在意","希望能放下","輕鬆一點","不那麼計較","想開了","太敏感","太在意","想太多","放不下","如果我不在乎就好了"]
+  },
+  {
+    word: "Mudita",
+    lang: "梵語",
+    origin: "來自梵語",
+    quote: "「看著你好，我也跟著好——不是嫉妒，而是你的快樂真的讓我快樂。」",
+    keys: ["為你高興","替別人開心","好為你高興","朋友成功","真心替你快樂","看你幸福我也幸福","你好我就好","替你開心","為你驕傲","真的很替你高興"]
+  },
+  {
+    word: "Déjà vu",
+    lang: "法語",
+    origin: "來自法語",
+    quote: "「這個瞬間好像曾經發生過——你明明知道是第一次，身體卻說：我們來過這裡。」",
+    keys: ["好像來過","似曾相識","感覺見過","感覺發生過","這裡來過","好像做過","以前好像","熟悉感","有種熟悉","感覺很熟","好像夢到過"]
   }
 ];
 
@@ -160,7 +233,84 @@ function findBestMatch(input) {
   return best ?? WORDS[Math.floor(Math.random() * WORDS.length)];
 }
 
-// ── UI ────────────────────────────────────────────────────
+// ── Wisteria petals ───────────────────────────────────────
+const PETAL_COLORS = [
+  "#c4a0e8","#b57bee","#d0aaf5","#e9d5ff",
+  "#a78bfa","#c084fc","#ddd6fe","#cab4f0"
+];
+
+let petalInterval = null;
+
+function createPetal() {
+  const container = document.getElementById("petal-container");
+  const petal = document.createElement("div");
+  petal.className = "petal";
+
+  const size     = 6 + Math.random() * 6;
+  const left     = Math.random() * 100;
+  const duration = 4.5 + Math.random() * 5;
+  const delay    = Math.random() * 1.5;
+  const color    = PETAL_COLORS[Math.floor(Math.random() * PETAL_COLORS.length)];
+
+  petal.style.cssText = `
+    left: ${left}%;
+    width: ${size}px;
+    height: ${size * 1.75}px;
+    background: ${color};
+    opacity: ${0.55 + Math.random() * 0.35};
+    animation-name: petal-fall;
+    animation-duration: ${duration}s;
+    animation-delay: ${delay}s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  `;
+
+  container.appendChild(petal);
+
+  // When petal lands, create ripple then remove
+  const totalMs = (duration + delay) * 1000;
+  setTimeout(() => {
+    createRipple(left);
+    setTimeout(() => petal.remove(), 600);
+  }, totalMs - 400);
+}
+
+function createRipple(leftPercent) {
+  const ripple = document.createElement("div");
+  ripple.className = "ripple";
+  ripple.style.left = leftPercent + "%";
+  document.body.appendChild(ripple);
+  setTimeout(() => ripple.remove(), 1400);
+}
+
+function startPetals() {
+  document.getElementById("water-surface").classList.add("visible");
+  for (let i = 0; i < 10; i++) setTimeout(createPetal, i * 250);
+  petalInterval = setInterval(createPetal, 700);
+}
+
+function stopPetals() {
+  clearInterval(petalInterval);
+  petalInterval = null;
+  setTimeout(() => {
+    document.getElementById("water-surface").classList.remove("visible");
+    document.getElementById("petal-container").innerHTML = "";
+  }, 7000);
+}
+
+// ── Typewriter ────────────────────────────────────────────
+function typewrite(el, text, speed = 90) {
+  el.innerHTML = "";
+  [...text].forEach((ch, i) => {
+    const span = document.createElement("span");
+    span.className = "word-char";
+    span.textContent = ch;
+    span.style.animationDelay = `${i * speed}ms`;
+    el.appendChild(span);
+  });
+}
+
+// ── UI refs ───────────────────────────────────────────────
 const inputSection   = document.getElementById("input-section");
 const loadingSection = document.getElementById("loading-section");
 const resultSection  = document.getElementById("result-section");
@@ -171,38 +321,55 @@ textarea.addEventListener("input", () => {
   remaining.textContent = 400 - textarea.value.length;
 });
 
-document.getElementById("search-btn").addEventListener("click", () => {
+// Enter to submit (Shift+Enter = new line)
+textarea.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey) {
+    e.preventDefault();
+    triggerSearch();
+  }
+});
+
+document.getElementById("search-btn").addEventListener("click", triggerSearch);
+document.getElementById("again-btn").addEventListener("click", reset);
+
+// ── Core flow ─────────────────────────────────────────────
+function triggerSearch() {
   const input = textarea.value.trim();
   if (!input) return;
   search(input);
-});
-
-document.getElementById("again-btn").addEventListener("click", reset);
+}
 
 function search(input) {
   inputSection.classList.add("hidden");
   loadingSection.classList.remove("hidden");
+  startPetals();
 
   setTimeout(() => {
     const result = findBestMatch(input);
+    loadingSection.classList.add("hidden");
     showResult(result);
-  }, 2200);
+  }, 2400);
 }
 
 function showResult(result) {
-  loadingSection.classList.add("hidden");
-
-  document.getElementById("result-word").textContent    = result.word;
   document.getElementById("result-origin").textContent  = result.origin;
   document.getElementById("result-quote").textContent   = result.quote;
   document.getElementById("result-summary").textContent = `出來了一個${result.lang}詞`;
 
   resultSection.classList.remove("hidden");
+
+  // Typewriter on the word after section fades in
+  setTimeout(() => {
+    typewrite(document.getElementById("result-word"), result.word, 110);
+  }, 400);
+
+  // Slow down petals after result appears
+  setTimeout(stopPetals, 3000);
 }
 
 function reset() {
   resultSection.classList.add("hidden");
-  textarea.value      = "";
+  textarea.value = "";
   remaining.textContent = "400";
   inputSection.classList.remove("hidden");
   window.scrollTo({ top: 0, behavior: "smooth" });
